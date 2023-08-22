@@ -9,7 +9,6 @@ services:
       args:
         UID: "${UID:-1000}"
         GID: "${GID:-1000}"
-        SSH_PRIVATE_KEY_PATH: "${SSH_PRIVATE_KEY_PATH}"
     expose:
       - "9000"
     volumes:

@@ -4,9 +4,9 @@ namespace tests\Meals\Unit\Application\Component\Validator;
 
 use Meals\Application\Component\Validator\Exception\AccessDeniedException;
 use Meals\Application\Component\Validator\UserHasAccessToViewPollsValidator;
-use Meals\Domain\User\Permission\Permission;
-use Meals\Domain\User\Permission\PermissionList;
-use Meals\Domain\User\User;
+use Meals\Domain\Model\User\Permission\Permission;
+use Meals\Domain\Model\User\Permission\PermissionList;
+use Meals\Domain\Model\User\User;
 use PHPUnit\Framework\TestCase;
 use Prophecy\PhpUnit\ProphecyTrait;
 

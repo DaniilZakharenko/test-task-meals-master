@@ -3,7 +3,7 @@
 namespace Meals\Application\Component\Validator;
 
 use Meals\Application\Component\Validator\Exception\PollIsNotActiveException;
-use Meals\Domain\Poll\Poll;
+use Meals\Domain\Model\Poll\Poll;
 
 class PollIsActiveValidator
 {

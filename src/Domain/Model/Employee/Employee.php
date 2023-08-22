@@ -1,8 +1,8 @@
 <?php
 
-namespace Meals\Domain\Employee;
+namespace Meals\Domain\Model\Employee;
 
-use Meals\Domain\User\User;
+use Meals\Domain\Model\User\User;
 
 class Employee
 {

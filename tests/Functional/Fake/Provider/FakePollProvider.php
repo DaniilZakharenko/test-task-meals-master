@@ -2,9 +2,9 @@
 
 namespace tests\Meals\Functional\Fake\Provider;
 
-use Meals\Application\Component\Provider\PollProviderInterface;
-use Meals\Domain\Poll\Poll;
-use Meals\Domain\Poll\PollList;
+use Meals\Domain\Model\Poll\Poll;
+use Meals\Domain\Model\Poll\PollList;
+use Meals\Domain\Provider\PollProviderInterface;
 
 class FakePollProvider implements PollProviderInterface
 {

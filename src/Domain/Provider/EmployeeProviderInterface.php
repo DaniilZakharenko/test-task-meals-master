@@ -1,8 +1,8 @@
 <?php
 
-namespace Meals\Application\Component\Provider;
+namespace Meals\Domain\Provider;
 
-use Meals\Domain\Employee\Employee;
+use Meals\Domain\Model\Employee\Employee;
 
 interface EmployeeProviderInterface
 {

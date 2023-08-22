@@ -1,6 +1,6 @@
 <?php
 
-namespace Meals\Domain\User\Permission;
+namespace Meals\Domain\Model\User\Permission;
 
 use Assert\Assertion;
 

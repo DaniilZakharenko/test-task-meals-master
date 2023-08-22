@@ -2,11 +2,11 @@
 
 namespace Meals\Application\Feature\Poll\UseCase\EmployeeGetsActivePoll;
 
-use Meals\Application\Component\Provider\EmployeeProviderInterface;
-use Meals\Application\Component\Provider\PollProviderInterface;
 use Meals\Application\Component\Validator\PollIsActiveValidator;
 use Meals\Application\Component\Validator\UserHasAccessToViewPollsValidator;
-use Meals\Domain\Poll\Poll;
+use Meals\Domain\Model\Poll\Poll;
+use Meals\Domain\Provider\EmployeeProviderInterface;
+use Meals\Domain\Provider\PollProviderInterface;
 
 class Interactor
 {
