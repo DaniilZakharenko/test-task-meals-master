@@ -1,6 +1,6 @@
 <?php
 
-namespace Meals\Domain\Dish;
+namespace Meals\Domain\Model\Dish;
 
 class Dish
 {

@@ -5,13 +5,14 @@ namespace tests\Meals\Functional\Interactor;
 use Meals\Application\Component\Validator\Exception\AccessDeniedException;
 use Meals\Application\Component\Validator\Exception\PollIsNotActiveException;
 use Meals\Application\Feature\Poll\UseCase\EmployeeGetsActivePoll\Interactor;
-use Meals\Domain\Dish\DishList;
-use Meals\Domain\Employee\Employee;
-use Meals\Domain\Menu\Menu;
-use Meals\Domain\Poll\Poll;
-use Meals\Domain\User\Permission\Permission;
-use Meals\Domain\User\Permission\PermissionList;
-use Meals\Domain\User\User;
+use Meals\Domain\Model\Dish\DishList;
+use Meals\Domain\Model\Employee\Employee;
+use Meals\Domain\Model\Menu\Menu;
+use Meals\Domain\Model\Poll\Poll;
+use Meals\Domain\Model\Poll\PollRuleOpen;
+use Meals\Domain\Model\User\Permission\Permission;
+use Meals\Domain\Model\User\Permission\PermissionList;
+use Meals\Domain\Model\User\User;
 use tests\Meals\Functional\Fake\Provider\FakeEmployeeProvider;
 use tests\Meals\Functional\Fake\Provider\FakePollProvider;
 use tests\Meals\Functional\FunctionalTestCase;
@@ -97,7 +98,12 @@ class EmployeeGetsActivePollTest extends FunctionalTestCase
                 1,
                 'title',
                 new DishList([]),
-            )
+            ),
+            new PollRuleOpen(
+                1,
+                '08:00',
+                '20:00'
+            ),
         );
     }
 

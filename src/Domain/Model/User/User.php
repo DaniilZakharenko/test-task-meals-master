@@ -1,9 +1,8 @@
 <?php
 
-namespace Meals\Domain\User;
+namespace Meals\Domain\Model\User;
 
-use Meals\Domain\User\Permission\Permission;
-use Meals\Domain\User\Permission\PermissionList;
+use Meals\Domain\Model\User\Permission\PermissionList;
 
 class User
 {

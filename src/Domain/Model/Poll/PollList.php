@@ -1,6 +1,6 @@
 <?php
 
-namespace Meals\Domain\Poll;
+namespace Meals\Domain\Model\Poll;
 
 use Assert\Assertion;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Meals\Domain\Poll;
+namespace Meals\Domain\Model\Poll;
 
-use Meals\Domain\Menu\Menu;
+use Meals\Domain\Model\Menu\Menu;
 
 class Poll
 {
@@ -14,6 +14,10 @@ class Poll
 
     /** @var Menu */
     private $menu;
+    /**
+     * @var PollRuleOpen
+     */
+    private $pullRuleOpen;
 
     /**
      * Poll constructor.
@@ -21,11 +25,12 @@ class Poll
      * @param bool $isActive
      * @param Menu $menu
      */
-    public function __construct(int $id, bool $isActive, Menu $menu)
+    public function __construct(int $id, bool $isActive, Menu $menu, PollRuleOpen $pullRuleOpen)
     {
         $this->id = $id;
         $this->isActive = $isActive;
         $this->menu = $menu;
+        $this->pullRuleOpen = $pullRuleOpen;
     }
 
     /**
@@ -50,5 +55,13 @@ class Poll
     public function getMenu(): Menu
     {
         return $this->menu;
+    }
+
+    /**
+     * @return PollRuleOpen
+     */
+    public function getPullRuleOpen(): PollRuleOpen
+    {
+        return $this->pullRuleOpen;
     }
 }

@@ -2,8 +2,8 @@
 
 namespace tests\Meals\Functional\Fake\Provider;
 
-use Meals\Application\Component\Provider\EmployeeProviderInterface;
-use Meals\Domain\Employee\Employee;
+use Meals\Domain\Model\Employee\Employee;
+use Meals\Domain\Provider\EmployeeProviderInterface;
 
 class FakeEmployeeProvider implements EmployeeProviderInterface
 {

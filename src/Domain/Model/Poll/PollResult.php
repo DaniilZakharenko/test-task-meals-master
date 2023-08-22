@@ -1,9 +1,9 @@
 <?php
 
-namespace Meals\Domain\Poll;
+namespace Meals\Domain\Model\Poll;
 
-use Meals\Domain\Dish\Dish;
-use Meals\Domain\Employee\Employee;
+use Meals\Domain\Model\Dish\Dish;
+use Meals\Domain\Model\Employee\Employee;
 
 class PollResult
 {
@@ -28,15 +28,13 @@ class PollResult
      * @param Poll $poll
      * @param Employee $employee
      * @param Dish $dish
-     * @param int $employeeFloor
      */
-    public function __construct(int $id, Poll $poll, Employee $employee, Dish $dish, int $employeeFloor)
+    public function __construct(int $id, Poll $poll, Employee $employee, Dish $dish)
     {
         $this->id = $id;
         $this->poll = $poll;
         $this->employee = $employee;
         $this->dish = $dish;
-        $this->employeeFloor = $employeeFloor;
     }
 
     /**
@@ -71,11 +69,4 @@ class PollResult
         return $this->dish;
     }
 
-    /**
-     * @return int
-     */
-    public function getEmployeeFloor(): int
-    {
-        return $this->employeeFloor;
-    }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Meals\Domain\Menu;
+namespace Meals\Domain\Model\Menu;
 
-use Meals\Domain\Dish\DishList;
+use Meals\Domain\Model\Dish\DishList;
 
 class Menu
 {

@@ -4,9 +4,6 @@ USER root
 
 ARG UID=1000
 ARG GID=1000
-ARG SSH_PRIVATE_KEY_PATH
-
-ENV APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=1
 
 RUN apt-get update
 
@@ -29,5 +26,3 @@ WORKDIR /home/app/code
 
 COPY ./docker/php/php.ini $PHP_INI_DIR/php.ini
 
-COPY --chown=app:app $SSH_PRIVATE_KEY_PATH /home/app/.ssh/id_rsa
-RUN chmod =600 /home/app/.ssh/id_rsa
